@@ -15,8 +15,10 @@ namespace SocialApp
                 .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    //fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    //fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("UbuntuMono-Regular.ttf", "UbuntuMonoRegular");
+                    fonts.AddFont("UbuntuMono-Bold.ttf", "UbuntuMonoBold");
                 });
 
 

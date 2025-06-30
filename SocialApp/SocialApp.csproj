@@ -80,4 +80,10 @@
 		</Compile>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Pages\OnBoardingPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

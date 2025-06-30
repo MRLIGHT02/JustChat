@@ -4,11 +4,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:SocialApp.Pages"
-    Title="SocialApp">
+    Title="SocialApp"
+    Shell.BackgroundColor="{StaticResource Primary}"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.ForegroundColor="White"
+    Shell.NavBarHasShadow="True"
+    Shell.NavBarIsVisible="False"
+    Shell.TitleColor="White">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate pages:HomePage}"
-        Route="MainPage" />
+        Route="HomePage" />
+    <ShellContent
+        Title="OnBoard"
+        ContentTemplate="{DataTemplate pages:OnBoardingPage}"
+        Route="OnBoardingPage" />
 
 </Shell>
