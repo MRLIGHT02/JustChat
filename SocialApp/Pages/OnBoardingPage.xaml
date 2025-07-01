@@ -7,7 +7,8 @@
     BackgroundColor="{StaticResource Primary}"
     Shell.NavBarIsVisible="False">
     <Grid RowDefinitions="*,Auto,*,Auto">
-        <Grid RowDefinitions="auto,auto,auto">
+        <Grid Grid.Row="1" RowDefinitions="Auto,Auto,Auto">
+            <Image Source="social_media.png" />
             <Image Source="social_media.png" />
         </Grid>
     </Grid>

@@ -13,12 +13,12 @@
     Shell.TitleColor="White">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:HomePage}"
-        Route="HomePage" />
-    <ShellContent
         Title="OnBoard"
         ContentTemplate="{DataTemplate pages:OnBoardingPage}"
         Route="OnBoardingPage" />
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate pages:HomePage}"
+        Route="HomePage" />
 
 </Shell>
