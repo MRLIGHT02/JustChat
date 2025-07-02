@@ -17,6 +17,10 @@
         ContentTemplate="{DataTemplate pages:OnBoardingPage}"
         Route="OnBoardingPage" />
     <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage" />
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate pages:HomePage}"
         Route="HomePage" />

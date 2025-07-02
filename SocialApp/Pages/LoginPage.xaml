@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SocialApp.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LoginPage"
+    Padding="20">
+    <Grid
+        RowDefinitions="Auto,Auto,Auto"
+        RowSpacing="20"
+        VerticalOptions="Center">
+        <Image
+            Grid.Row="0"
+            HeightRequest="128"
+            Source="social_media.png" />
+        <Label
+            Grid.Row="1"
+            FontAttributes="Bold"
+            FontSize="25"
+            HorizontalOptions="Center"
+            Text="Login" />
+        <VerticalStackLayout Grid.Row="2">
+            <Label Text="Username" />
+            <Entry BackgroundColor="LightGoldenrodYellow" Placeholder="Enter Username" />
+            <BoxView HeightRequest="20" Color="Transparent" />
+
+            <Label Text="Password" />
+            <Entry BackgroundColor="LightGoldenrodYellow" Placeholder="Enter Password" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

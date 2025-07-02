@@ -7,9 +7,44 @@
     BackgroundColor="{StaticResource Primary}"
     Shell.NavBarIsVisible="False">
     <Grid RowDefinitions="*,Auto,*,Auto">
-        <Grid Grid.Row="1" RowDefinitions="Auto,Auto,Auto">
-            <Image Source="social_media.png" />
-            <Image Source="social_media.png" />
+        <Grid
+            Grid.Row="1"
+            HorizontalOptions="Center"
+            RowDefinitions="Auto,Auto,Auto"
+            RowSpacing="10">
+            <Image Grid.Row="0" Source="social_media.png" />
+            <Label
+                Grid.Row="1"
+                FontAttributes="Bold"
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="Hello There"
+                TextColor="White" />
+            <VerticalStackLayout Grid.Row="2" Spacing="10">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    Text="Welcome To This "
+                    TextColor="White" />
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="29"
+                    HorizontalOptions="Center"
+                    Text="Social App"
+                    TextColor="White" />
+            </VerticalStackLayout>
         </Grid>
+        <StackLayout Grid.Row="3" Padding="10">
+            <Button
+                x:Name="goToLoginPage"
+                Background="White"
+                Clicked="goToLoginPage_Clicked"
+                FontAttributes="Bold"
+                FontSize="20"
+                Style="{StaticResource Rounded}"
+                Text="Get Started"
+                TextColor="{StaticResource Primary}" />
+        </StackLayout>
     </Grid>
 </ContentPage>
